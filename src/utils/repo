@@ -1,0 +1,7 @@
+
+
+{user===undefined?
+             <Nav.Link href="/access" style={{color:"white"}}> Login </Nav.Link>:
+             <Nav.Link href={`/profile/${user._id}`}
+             key={user._id} style={{color:"white", margin:"10px"}}> {user.name}
+             </Nav.Link> }
